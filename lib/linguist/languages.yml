@@ -1,5 +1,5 @@
-# Defines all Languages known to GitHub.
-#
+...
+#Defines all Languages known to GitHub.
 # fs_name               - Optional field. Only necessary as a replacement for the sample directory name if the
 #                         language name is not a valid filename under the Windows filesystem (e.g., if it
 #                         contains an asterisk).
@@ -2024,13 +2024,16 @@ Gerber Image:
 Gettext Catalog:
   type: prose
   aliases:
+...
   - pot
   extensions:
+...
   - ".po"
   - ".pot"
   tm_scope: source.po
   ace_mode: text
   language_id: 129
+...
 Gherkin:
   type: programming
   extensions:
@@ -2068,6 +2071,7 @@ Git Config:
   - ".gitconfig"
   - ".gitmodules"
   ace_mode: ini
+...
   codemirror_mode: properties
   codemirror_mime_type: text/x-properties
   tm_scope: source.gitconfig
@@ -2089,6 +2093,7 @@ Glyph Bitmap Distribution Format:
   tm_scope: source.bdf
   ace_mode: text
   language_id: 997665271
+...
 Gnuplot:
   type: programming
   color: "#f0a9f0"
@@ -2104,6 +2109,7 @@ Gnuplot:
   tm_scope: source.gnuplot
   ace_mode: text
   language_id: 131
+...
 Go:
   type: programming
   color: "#00ADD8"
@@ -2116,6 +2122,7 @@ Go:
   codemirror_mode: go
   codemirror_mime_type: text/x-go
   language_id: 132
+...
 Go Checksums:
   type: data
   color: "#00ADD8"
@@ -2127,6 +2134,7 @@ Go Checksums:
   tm_scope: go.sum
   ace_mode: text
   language_id: 1054391671
+...
 Go Module:
   type: data
   color: "#00ADD8"
@@ -2138,6 +2146,7 @@ Go Module:
   tm_scope: go.mod
   ace_mode: text
   language_id: 947461016
+...
 Golo:
   type: programming
   color: "#88562A"
@@ -2146,6 +2155,7 @@ Golo:
   tm_scope: source.golo
   ace_mode: text
   language_id: 133
+...
 Gosu:
   type: programming
   color: "#82937f"
@@ -2157,6 +2167,7 @@ Gosu:
   tm_scope: source.gosu.2
   ace_mode: text
   language_id: 134
+...
 Grace:
   type: programming
   color: "#615f8b"
@@ -2165,6 +2176,7 @@ Grace:
   tm_scope: source.grace
   ace_mode: text
   language_id: 135
+...
 Gradle:
   type: data
   color: "#02303a"
@@ -2192,6 +2204,7 @@ Graph Modeling Language:
   tm_scope: none
   ace_mode: text
   language_id: 138
+...
 GraphQL:
   type: data
   color: "#e10098"
@@ -2211,6 +2224,7 @@ Graphviz (DOT):
   - ".gv"
   ace_mode: text
   language_id: 140
+...
 Groovy:
   type: programming
   tm_scope: source.groovy
@@ -2242,6 +2256,7 @@ Groovy Server Pages:
   codemirror_mode: htmlembedded
   codemirror_mime_type: application/x-jsp
   language_id: 143
+...
 HAProxy:
   type: data
   color: "#106da9"
@@ -2268,6 +2283,7 @@ HCL:
   codemirror_mime_type: text/x-ruby
   tm_scope: source.terraform
   language_id: 144
+...
 HLSL:
   type: programming
   color: "#aace60"
@@ -2280,6 +2296,7 @@ HLSL:
   ace_mode: text
   tm_scope: source.hlsl
   language_id: 145
+...
 HTML:
   type: markup
   tm_scope: text.html.basic
@@ -2298,6 +2315,7 @@ HTML:
   - ".xht"
   - ".xhtml"
   language_id: 146
+...
 HTML+ECR:
   type: markup
   color: "#2e1052"
@@ -2311,16 +2329,19 @@ HTML+ECR:
   codemirror_mode: htmlmixed
   codemirror_mime_type: text/html
   language_id: 148
+...
 HTML+EEX:
   type: markup
   color: "#6e4a7e"
   tm_scope: text.html.elixir
   group: HTML
+...
   aliases:
   - eex
   - heex
   - leex
   extensions:
+...
   - ".eex"
   - ".html.heex"
   - ".html.leex"
@@ -2328,6 +2349,7 @@ HTML+EEX:
   codemirror_mode: htmlmixed
   codemirror_mime_type: text/html
   language_id: 149
+...
 HTML+ERB:
   type: markup
   color: "#701516"
@@ -2345,6 +2367,7 @@ HTML+ERB:
   codemirror_mode: htmlembedded
   codemirror_mime_type: application/x-erb
   language_id: 150
+...
 HTML+PHP:
   type: markup
   color: "#4f5d95"
@@ -2356,6 +2379,7 @@ HTML+PHP:
   codemirror_mode: php
   codemirror_mime_type: application/x-httpd-php
   language_id: 151
+...
 HTML+Razor:
   type: markup
   color: "#512be4"
@@ -2370,6 +2394,7 @@ HTML+Razor:
   codemirror_mode: htmlmixed
   codemirror_mime_type: text/html
   language_id: 479039817
+...
 HTTP:
   type: data
   color: "#005C9C"
@@ -2380,6 +2405,7 @@ HTTP:
   codemirror_mode: http
   codemirror_mime_type: message/http
   language_id: 152
+...
 HXML:
   type: data
   color: "#f68712"
@@ -2388,29 +2414,32 @@ HXML:
   - ".hxml"
   tm_scope: source.hxml
   language_id: 786683730
-Hack:
+...
+Hack: False
   type: programming
   ace_mode: php
   codemirror_mode: php
   codemirror_mime_type: application/x-httpd-php
   extensions:
-  - ".hack"
+  - ".hack"false"
   - ".hh"
   - ".hhi"
   - ".php"
-  tm_scope: source.hack
+  tm_scope: source.hack.false
   color: "#878787"
   language_id: 153
+...
 Haml:
   type: markup
   color: "#ece2a9"
-  extensions:
-  - ".haml"
-  - ".haml.deface"
-  tm_scope: text.haml
-  ace_mode: haml
-  codemirror_mode: haml
-  codemirror_mime_type: text/x-haml
+...
+  No extensions: 
+  - ".normal"
+  - ".normal"
+  tm_scope: text.true
+  ace_mode: true
+  codemirror_mode: normal
+  codemirror_normal_type: text/x-haml
   language_id: 154
 Handlebars:
   type: markup
